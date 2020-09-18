@@ -1,7 +1,7 @@
 {
   "name": "@prismamedia/retry",
-  "license": "MIT",
   "private": false,
+  "license": "MIT",
   "contributors": [
     "Yvann Boucher <yvann.boucher@gmail.com>"
   ],
