@@ -1,2 +1,4 @@
-.yarn/
-src/
+.yarn
+dist/tsconfig.*
+node_modules
+src
