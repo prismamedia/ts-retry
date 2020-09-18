@@ -9,9 +9,9 @@
     "moduleResolution": "Node",
     "lib": ["ES2019"],
     "target": "ES2019",
-    "module": "ES2015",
+    "module": "CommonJS",
     "rootDir": "src",
-    "outDir": "dist/esm",
+    "outDir": "dist/cjs",
     "declaration": true,
     "declarationMap": true,
     "declarationDir": "dist/types"
