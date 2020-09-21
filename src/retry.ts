@@ -3,7 +3,7 @@ import { setTimeout } from 'timers';
 export type TRetryOptions = {
   /**
    * The maximum amount of times to retry the operation.
-   * Default is 10
+   * Default is 9 (= for a total of 10 tries)
    */
   retries?: number;
 
@@ -17,7 +17,7 @@ export type TRetryOptions = {
    * The number of milliseconds before starting the first retry.
    * Default is 1000
    */
-  timeoutInMs?: number;
+  retryAfterInMs?: number;
 };
 
 async function waitFor(ms: number): Promise<void> {
@@ -26,7 +26,7 @@ async function waitFor(ms: number): Promise<void> {
 
 export async function retry<R>(
   fn: (doNotRetry: () => void) => Promise<R>,
-  { retries = 10, factor = 2, timeoutInMs = 1000 }: TRetryOptions = {},
+  { retries = 9, factor = 2, retryAfterInMs = 1000 }: TRetryOptions = {},
 ): Promise<R> {
   let doNotRetry: boolean = false;
 
@@ -39,12 +39,12 @@ export async function retry<R>(
       throw error;
     }
 
-    await waitFor(timeoutInMs);
+    await waitFor(retryAfterInMs);
 
     return await retry(fn, {
       retries: retries - 1,
       factor,
-      timeoutInMs: timeoutInMs * factor,
+      retryAfterInMs: retryAfterInMs * factor,
     });
   }
 }
