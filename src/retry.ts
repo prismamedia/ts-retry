@@ -41,7 +41,7 @@ export async function retry<R>(
 
     await waitFor(retryAfterInMs);
 
-    return await retry(fn, {
+    return retry(fn, {
       retries: retries - 1,
       factor,
       retryAfterInMs: retryAfterInMs * factor,
