@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/jest", "npm:26.0.14"],
-            ["@types/node", "npm:14.11.1"],
+            ["@types/node", "npm:14.11.2"],
             ["@yarnpkg/pnpify", "virtual:82978e003817ba096db5c63e5c246d919b1632603aa9af0068a4368124a9c9e16902d692c028bef6ce988ecaf141321451ed53e35c1b374a35244a97bb9716ba#npm:2.2.1"],
             ["jest", "npm:26.4.2"],
             ["prettier", "npm:2.1.2"],
@@ -770,7 +770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@prismamedia/retry", "workspace:."],
             ["@types/jest", "npm:26.0.14"],
-            ["@types/node", "npm:14.11.1"],
+            ["@types/node", "npm:14.11.2"],
             ["@yarnpkg/pnpify", "virtual:82978e003817ba096db5c63e5c246d919b1632603aa9af0068a4368124a9c9e16902d692c028bef6ce988ecaf141321451ed53e35c1b374a35244a97bb9716ba#npm:2.2.1"],
             ["jest", "npm:26.4.2"],
             ["prettier", "npm:2.1.2"],
@@ -988,10 +988,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.11.1", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.11.1-6670c607c7-f8bad278fc.zip/node_modules/@types/node/",
+        ["npm:14.11.2", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.11.2-53170144b7-3badcce399.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.11.1"]
+            ["@types/node", "npm:14.11.2"]
           ],
           "linkType": "HARD",
         }]

@@ -634,7 +634,7 @@ __metadata:
   resolution: "@prismamedia/retry@workspace:."
   dependencies:
     "@types/jest": ^26.0.14
-    "@types/node": ^14.11.1
+    "@types/node": ^14.11.2
     "@yarnpkg/pnpify": ^2.2.1
     jest: ^26.4.2
     prettier: ^2.1.2
@@ -828,10 +828,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.11.1":
-  version: 14.11.1
-  resolution: "@types/node@npm:14.11.1"
-  checksum: f8bad278fcd5bdd3c173343967806a5601838570ee89ef96912909489df6d722ef7f4de08a31d98159293ef0005bd65353199327c65af77505d3aad2a05fd636
+"@types/node@npm:^14.11.2":
+  version: 14.11.2
+  resolution: "@types/node@npm:14.11.2"
+  checksum: 3badcce3991cd8487b549b2541c9a9809f77ded06a2846dd9c73948d12a442290b31abef2d4b0304cc7e30539614ae82ff3b70d93a4b9a82e19128b3d17a9e0f
   languageName: node
   linkType: hard
 
