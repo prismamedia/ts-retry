@@ -1,9 +1,8 @@
 version: '3.8'
 
 services:
-
   lib:
-    build: .
+    image: node:12
     working_dir: /workspace
     volumes:
       - .:/workspace:delegated
